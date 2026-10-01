@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+  max-width: 1200px;
+  height: 65px;
+  /* margin: 0 auto; */
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Employee Portal */
+
+.logo {
+  color: #111827;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 35px;
+  display: flex-start;
+}
+
+/* Home + Employees */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo span {
+  color: #2563eb;
+}
+.nav-link {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+
+  padding: 9px 15px;
+  border-radius: 7px;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+  background: #eff6ff;
+}

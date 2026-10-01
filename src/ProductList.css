@@ -1,0 +1,467 @@
+/* =========================================
+   EMPLOYEE LIST PAGE
+========================================= */
+
+.employee-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px 50px 60px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.employee-page-header {
+  max-width: 1250px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.page-subtitle {
+  display: block;
+
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+  margin-bottom: 7px;
+}
+
+.employee-page-header h1 {
+  margin: 0;
+
+  color: #111827;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.employee-page-header p {
+  margin: 7px 0 0;
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   ADD EMPLOYEE BUTTON
+========================================= */
+
+.add-employee-btn {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.add-employee-btn:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.employee-table-card {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   TABLE TOP
+========================================= */
+
+.table-top {
+  padding: 22px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+.table-top h2 {
+  margin: 0;
+
+  color: #111827;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.table-top p {
+  margin: 5px 0 0;
+
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.employee-count {
+  background: #eff6ff;
+  color: #2563eb;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  min-width: 950px;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.employee-table thead {
+  background: #f9fafb;
+}
+
+.employee-table th {
+  padding: 14px 20px;
+
+  color: #6b7280;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-align: left;
+
+  letter-spacing: 0.5px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* =========================================
+   TABLE ROW
+========================================= */
+
+.employee-table tbody tr {
+  transition: background 0.2s;
+}
+
+.employee-table tbody tr:hover {
+  background: #f8faff;
+}
+
+.employee-table td {
+  padding: 16px 20px;
+
+  color: #374151;
+
+  font-size: 13px;
+
+  border-bottom: 1px solid #f0f1f3;
+}
+
+.employee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   EMPLOYEE ID
+========================================= */
+
+.employee-id {
+  color: #6b7280 !important;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   EMPLOYEE INFO
+========================================= */
+
+.employee-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 230px;
+}
+
+.employee-avatar {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.employee-name-info {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+.employee-name-info strong {
+  color: #111827;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.employee-name-info span {
+  margin-top: 3px;
+
+  color: #9ca3af;
+
+  font-size: 11px;
+
+  max-width: 180px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   CODE
+========================================= */
+
+.employee-code {
+  display: inline-block;
+
+  background: #f3f4f6;
+  color: #4b5563;
+
+  padding: 5px 9px;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   POSITION
+========================================= */
+
+.position-text {
+  color: #374151;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   DEPARTMENT
+========================================= */
+
+.department-badge {
+  display: inline-block;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  padding: 5px 9px;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-text {
+  color: #4b5563;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.employee-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+
+/* Common Button */
+
+.action-btn {
+  width: 34px;
+  height: 34px;
+
+  padding: 0;
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  background: #ffffff;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.action-btn span {
+  font-size: 14px;
+  line-height: 1;
+}
+
+
+/* =========================================
+   VIEW
+========================================= */
+
+.action-view {
+  background: #eff6ff;
+  border-color: #dbeafe;
+}
+
+.action-view:hover {
+  background: #dbeafe;
+  border-color: #bfdbfe;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   EDIT
+========================================= */
+
+.action-edit {
+  background: #fffbeb;
+  border-color: #fef3c7;
+}
+
+.action-edit:hover {
+  background: #fef3c7;
+  border-color: #fde68a;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 3px 8px rgba(245, 158, 11, 0.12);
+}
+
+
+/* =========================================
+   DELETE
+========================================= */
+
+.action-delete {
+  background: #fef2f2;
+  border-color: #fee2e2;
+}
+
+.action-delete:hover {
+  background: #fee2e2;
+  border-color: #fecaca;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 3px 8px rgba(239, 68, 68, 0.12);
+}
+
+
+/* Click Effect */
+
+.action-btn:active {
+  transform: scale(0.94);
+}
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .employee-page {
+    padding: 30px 20px 50px;
+  }
+
+  .employee-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .add-employee-btn {
+    width: 100%;
+  }
+
+  .employee-table-card {
+    border-radius: 10px;
+  }
+
+}
